@@ -1,3 +1,5 @@
+[![Build Status][travis-image]][travis-url]
+
 #Setup Process
 
 - "Transpiler" : Translates ES6 into ES5
@@ -32,3 +34,7 @@ let allows us to define variables.  var only has two scopes:  global and functio
 
 - Same syntax as C# function(name="Brian")
 - Null will not 
+
+
+[travis-url]:  https://travis-ci.org/pbrianmackey/ES6
+[travis-image]: https://travis-ci.org/pbrianmackey/ES6.svg
