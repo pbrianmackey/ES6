@@ -12,6 +12,7 @@
   "author": "Brian Mackey",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^4.7.3",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",

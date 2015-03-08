@@ -1,14 +1,23 @@
 [![Build Status][travis-image]][travis-url]
 
-#Setup Process
+#About
 
-- "Transpiler" : Translates ES6 into ES5
-- Babel
-- "Try it out"
-- recommend running: npm install -g karma-cli (global accessibility of Karma)
-- also recommend: npm install karma-jasmine karma-chrome-launcher --save-dev
+Introduction to ES6.  In this project I introduce concepts and code samples covering the latest and greatest in JavaScript. This project uses a "transpiler" called Babel to generate ES5 code from ES6 code that can run in any modern browser.
 
-###let
+###Brown Bag Notes
+
+Notes for doing this presentation in brown bag.
+
+- Demo Babel's "Try it out"
+
+##Setup Process
+
+- Recommend running: npm install -g karma-cli (global accessibility of Karma)
+- Run npm install at the root directory where you clone the project.
+
+#JavaScript 6 Concepts
+
+##let
 
 let allows us to define variables.  var only has two scopes:  global and function (0 or 100).  let gives us block scope!
 
@@ -20,7 +29,7 @@ let allows us to define variables.  var only has two scopes:  global and functio
 - babel src --watch --out-dir tests
 - karma start
 
-###const
+##const
 
 - const will have block scoping just like the let keyword.  
 
@@ -33,7 +42,8 @@ let allows us to define variables.  var only has two scopes:  global and functio
 ##Default parameter values
 
 - Same syntax as C# function(name="Brian")
-- Null will not 
+- Null will not
+
 
 
 [travis-url]:  https://travis-ci.org/pbrianmackey/ES6
