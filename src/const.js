@@ -7,4 +7,3 @@ describe("using const", function() {
 		expect(MAX_SIZE).toBe(10);
 	});
 });
-
