@@ -214,7 +214,25 @@ let numbers = function*(){
   yield 3;
 }
 ```
+##Comprehensions
 
-##Other Cool Stuff
-- [ES6 Features](https://github.com/lukehoban/es6features#symbols)
-- [Compatability Chart](http://kangax.github.io/compat-table/es6/)
+-terse syntax for building arrays and generators.
+
+```javascript
+//Array comprehension syntax
+var numbers = [for(n of [1,2,3]) n * n];
+expect(numbers).toEqual(1,4,9);
+
+//Array comp. with predicate
+var numbers3 = [for (n of [1,2,3]) if(n > 1) n * n];
+expect(numbers3).toEqual([4,9]);
+
+//Generator syntax
+var numbers3 = (for (n of [1,2,3]) n * n);
+expect(Array.from(numbers3)).toEqual([1,4,9]);
+
+//yield Generation
+yield* (for (item of items) if(predicate(item)) item);
+```
+
+- Use Array comprehension when you want to be lazy.
