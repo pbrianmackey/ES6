@@ -18,7 +18,8 @@ Notes for doing this presentation in brown bag.
 
 ####Demo (powered by jasmine and Karma)
 
-- cd ~/Programming/Personal/ES6BrownBag/
+- First time run Setup Process
+- cd ~/ES6/
 - babel src --watch --out-dir tests
 - karma start
 
