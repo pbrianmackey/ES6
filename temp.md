@@ -182,7 +182,38 @@ it('lexically binds to this', function(done) {
   }, 15);
 });
 ```
+##Iterators
 
+```javascript
+//Low level example
+let sum = 0;
+let numbers = [1,2,3,4];
+let iterator = numbers.values();
+let next = iterator.next();
+while(next.done){
+  sum += next.value;
+  next = iterator.next();
+}
+```
+- for of similar to C#'s foreach.  Works with iterators that have no length and no known end.
+
+```javascript
+for(let n of numbers){
+  console.log(n);
+}
+```
+
+##Generators
+
+- Generators are functions that create iterators.
+
+```javascript
+let numbers = function*(){
+  yield 1;
+  yield 2;
+  yield 3;
+}
+```
 
 ##Other Cool Stuff
 - [ES6 Features](https://github.com/lukehoban/es6features#symbols)
