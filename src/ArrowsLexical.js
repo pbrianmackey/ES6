@@ -5,10 +5,10 @@ describe("using Arrows", function() {
 
       this.name = "Brian"
 
-      (function() {
+      /*(function() {
         expect(this.name).toBe("");
-      })();
-      
+      })();*/
+
       //Create an asynchronous callback.
       setTimeout(function(){
         //expect(self.name).toBe("Brian");

@@ -5,9 +5,11 @@ describe("using Arrows", function () {
             //let self = this;
             //self.name = "Brian";
 
-            this.name = "Brian"(function () {
-                  expect(this.name).toBe("");
-            })();
+            this.name = "Brian";
+
+            /*(function() {
+              expect(this.name).toBe("");
+            })();*/
 
             //Create an asynchronous callback.
             setTimeout(function () {
