@@ -1,4 +1,4 @@
-[![Build Status][travis-image]][travis-url]
+[![Build Status][travis-image]][travis-url][![Code Climate](https://codeclimate.com/github/pbrianmackey/ES6/badges/gpa.svg)](https://codeclimate.com/github/pbrianmackey/ES6)
 
 #About
 
