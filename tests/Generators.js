@@ -1,13 +1,14 @@
-//require('babel-polyfill');
 "use strict";
+
+//require('babel/polyfill');
 
 describe("how Generators work", function () {
   it("will allow generator functions", function () {
     /*function * numbers() {
-      yield 1;
-      yield 2; 
-      yield 3;
-    };*/
+         yield 1;
+         yield 2;
+         yield 3;
+       };*/
 
     var numbers = (function () {
       var _numbers = {};
@@ -43,9 +44,9 @@ describe("how Generators work", function () {
 
     try {
       for (var _iterator = numbers[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        n = _step.value;
+        var num = _step.value;
 
-        sum += n;
+        sum += num;
       }
     } catch (err) {
       _didIteratorError = true;
