@@ -21,7 +21,7 @@
       for(let num of numbers){
         sum += num;
       }
-
+      
       expect(sum).toBe(6);
     });
   });

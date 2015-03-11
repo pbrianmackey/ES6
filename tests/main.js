@@ -1,3 +1,3 @@
 "use strict";
 
-console.log("helo world loaded main.js");
+//console.log("helo world loaded main.js");

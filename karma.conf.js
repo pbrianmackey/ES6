@@ -31,7 +31,7 @@ module.exports = function(config) {
     preprocessors: {
 			'src/*.js': ['babel']
     },
-		'babelPreprocessor': {
+		/*'babelPreprocessor': {
       options: {
         sourceMap: 'inline',
         //filename: 'errors.txt',
@@ -43,7 +43,7 @@ module.exports = function(config) {
       sourceFileName: function(file) {
         return file.originalPath;
       }
-    },
+    },*/
 
 
     // test results reporter to use
@@ -71,7 +71,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Firefox'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
