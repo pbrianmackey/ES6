@@ -9,7 +9,7 @@ describe("how Functional Programming works", function() {
       addEmployees(...names){
         this.employees = this.employees.concat(names);
       }
-      *[Symbol.iterator](){
+      *getEmployees(){
           for(let e of this.employees){
             yield e;
           }
@@ -17,7 +17,7 @@ describe("how Functional Programming works", function() {
     }
 
     //Generator function called filter.
-    let filter = function*(items, predicate){
+    let filter = function *(items, predicate){
         for(let item of items){
           if(predicate(item)){
             yield item;
@@ -29,10 +29,11 @@ describe("how Functional Programming works", function() {
     let company = new Company();
     company.addEmployees("Bob", "Sam", "Brian", "Jones")
 
-    for(let num of filter(company, e => e[0] == "B")){
+		//Count the number of employees whose name starts with "B"
+    for(let num of filter(company.getEmployees(), e => e[0] == "B")){
       sum += 1;
     }
-    
+
     expect(sum).toBe(2);
   });
 });
