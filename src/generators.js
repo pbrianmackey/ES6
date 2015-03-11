@@ -1,3 +1,5 @@
+//require('babel/polyfill');
+
   describe("how Generators work", function() {
   	it("will allow generator functions", function() {
       /*function * numbers() {
@@ -5,9 +7,9 @@
         yield 2;
         yield 3;
       };*/
+ 
 
 
-      /*
       let numbers = {
         [Symbol.iterator]:function*(){
             yield 1;
@@ -22,6 +24,6 @@
         sum += n;
       }
 
-      expect(sum).toBe(6);*/
+      expect(sum).toBe(6);
     });
   });
