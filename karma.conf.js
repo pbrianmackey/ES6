@@ -1,6 +1,5 @@
 // Karma configuration
 // Generated on Sat Mar 07 2015 10:25:28 GMT-0600 (CST)
-
 module.exports = function(config) {
   config.set({
 
@@ -22,6 +21,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+      //'src/main.js'
     ],
 
 
@@ -32,7 +32,8 @@ module.exports = function(config) {
     },
 		'babelPreprocessor': {
       options: {
-        sourceMap: 'inline'
+        sourceMap: 'inline',
+        filename: 'errors.txt'
       },
       filename: function(file) {
         return file.originalPath.replace(/\.js$/, '.es5.js');
@@ -59,7 +60,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
 
     // enable / disable watching file and executing tests whenever any file changes

@@ -1,12 +1,11 @@
+//require('babel-polyfill');
 "use strict";
-
-//require('babel/polyfill');
 
 describe("how Generators work", function () {
   it("will allow generator functions", function () {
     /*function * numbers() {
       yield 1;
-      yield 2;
+      yield 2; 
       yield 3;
     };*/
 

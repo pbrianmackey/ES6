@@ -15,7 +15,11 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
   baseUrl: '/base',
-
+/*
+  paths: {
+        'babel-polyfill': './node_modules/babel/browser-polyfill'
+    },
+*/
   // dynamically load all test files
   deps: allTestFiles,
 

@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'babel/polyfill',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 warn package.json ES6BrownBag@1.0.0 No repository field.
+5 warn package.json karma-chrome-launcher@0.1.7 No README data
+6 warn package.json karma-firefox-launcher@0.1.4 No README data
+7 silly cache add args [ 'babel/polyfill', null ]
+8 verbose cache add spec babel/polyfill
+9 silly cache add parsed spec { raw: 'babel/polyfill',
+9 silly cache add   scope: null,
+9 silly cache add   name: null,
+9 silly cache add   rawSpec: 'babel/polyfill',
+9 silly cache add   spec: 'babel/polyfill',
+9 silly cache add   type: 'github' }
+10 info maybeGithub Attempting babel/polyfill from git://github.com/babel/polyfill
+11 verbose addRemoteGit u="git://github.com/babel/polyfill" silent=true
+12 silly addRemoteGit normalized { url: 'git://github.com/babel/polyfill', branch: 'master' }
+13 silly addRemoteGit v git-github-com-babel-polyfill-1d74338b
+14 verbose addRemoteGit /Users/brianmackey/.npm/_git-remotes/git-github-com-babel-polyfill-1d74338b not in flight; cloning
+15 info git [ 'clone',
+15 info git   '--template=/Users/brianmackey/.npm/_git-remotes/_templates',
+15 info git   '--mirror',
+15 info git   'git://github.com/babel/polyfill',
+15 info git   '/Users/brianmackey/.npm/_git-remotes/git-github-com-babel-polyfill-1d74338b' ]
+16 verbose git clone git://github.com/babel/polyfill Cloning into bare repository '/Users/brianmackey/.npm/_git-remotes/git-github-com-babel-polyfill-1d74338b'...
+16 verbose git clone git://github.com/babel/polyfill fatal: remote error:
+16 verbose git clone git://github.com/babel/polyfill   Repository not found.
+17 info maybeGithub Attempting babel/polyfill from git+ssh://git@github.com:babel/polyfill
+18 verbose addRemoteGit u="git+ssh://git@github.com:babel/polyfill" silent=false
+19 silly addRemoteGit normalized { url: 'ssh://git@github.com/babel/polyfill', branch: 'master' }
+20 silly addRemoteGit v ssh-git-github-com-babel-polyfill-637b5d7a
+21 verbose addRemoteGit /Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a not in flight; cloning
+22 info git [ 'clone',
+22 info git   '--template=/Users/brianmackey/.npm/_git-remotes/_templates',
+22 info git   '--mirror',
+22 info git   'ssh://git@github.com/babel/polyfill',
+22 info git   '/Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a' ]
+23 error git clone ssh://git@github.com/babel/polyfill Cloning into bare repository '/Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a'...
+23 error git clone ssh://git@github.com/babel/polyfill Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+23 error git clone ssh://git@github.com/babel/polyfill Permission denied (publickey).
+23 error git clone ssh://git@github.com/babel/polyfill fatal: Could not read from remote repository.
+23 error git clone ssh://git@github.com/babel/polyfill
+23 error git clone ssh://git@github.com/babel/polyfill Please make sure you have the correct access rights
+23 error git clone ssh://git@github.com/babel/polyfill and the repository exists.
+24 verbose stack Error: Command failed: git clone --template=/Users/brianmackey/.npm/_git-remotes/_templates --mirror ssh://git@github.com/babel/polyfill /Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a
+24 verbose stack Cloning into bare repository '/Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a'...
+24 verbose stack Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+24 verbose stack Permission denied (publickey).
+24 verbose stack fatal: Could not read from remote repository.
+24 verbose stack
+24 verbose stack Please make sure you have the correct access rights
+24 verbose stack and the repository exists.
+24 verbose stack
+24 verbose stack     at ChildProcess.exithandler (child_process.js:744:12)
+24 verbose stack     at ChildProcess.emit (events.js:110:17)
+24 verbose stack     at maybeClose (child_process.js:1008:16)
+24 verbose stack     at Socket.<anonymous> (child_process.js:1176:11)
+24 verbose stack     at Socket.emit (events.js:107:17)
+24 verbose stack     at Pipe.close (net.js:476:12)
+25 verbose cwd /Users/brianmackey/Programming/ES6
+26 error Darwin 14.1.0
+27 error argv "node" "/usr/local/bin/npm" "install" "babel/polyfill" "--save-dev"
+28 error node v0.12.0
+29 error npm  v2.5.1
+30 error code 128
+31 error Command failed: git clone --template=/Users/brianmackey/.npm/_git-remotes/_templates --mirror ssh://git@github.com/babel/polyfill /Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a
+31 error Cloning into bare repository '/Users/brianmackey/.npm/_git-remotes/ssh-git-github-com-babel-polyfill-637b5d7a'...
+31 error Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+31 error Permission denied (publickey).
+31 error fatal: Could not read from remote repository.
+31 error
+31 error Please make sure you have the correct access rights
+31 error and the repository exists.
+32 error If you need help, you may report this error at:
+32 error     <http://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]

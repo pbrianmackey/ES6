@@ -1,13 +1,9 @@
 //require('babel/polyfill');
-
+/*
+define(['app', 'babel-polyfillz'], function(App, $, _) {
   describe("how Generators work", function() {
   	it("will allow generator functions", function() {
-      /*function * numbers() {
-        yield 1;
-        yield 2;
-        yield 3;
-      };*/
- 
+
 
 
       let numbers = {
@@ -27,3 +23,5 @@
       expect(sum).toBe(6);
     });
   });
+});
+*/
