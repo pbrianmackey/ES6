@@ -22,6 +22,7 @@ Notes for doing this presentation in brown bag.
 - cd ~/ES6/
 - babel src --watch --out-dir tests
 - karma start
+- Don't open the files in tests/ as this will messup babel file generation.
 
 #JavaScript 6 Concepts
 
@@ -287,6 +288,11 @@ yield* (for (item of items) if(predicate(item)) item);
 
 - Use Array comprehension when you want to be lazy.
 
+##Modules
+
+Originated with [CommonJS](http://www.commonjs.org/).  Then, Javascript broke away from the browser into stand alone apps like nodejs.  This made Asynchronous module loading more important.  AMD or Asynchrnous Module Definition arose in platforms like requireJS.  Script loading is also optimized at runtime to have fewer and smaller downloads.
+
+During development we want the modules to be split up into individual parts.  
 
 ##Using ES6 Today
 

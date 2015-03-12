@@ -1,13 +1,9 @@
-describe("how modules work", function(arg) {
+describe("how modules work", function() {
   it("will organize code into a single unit", function() {
 		//old way IIFE.  Immediately invoked functional expression
+
 		let input = {};
-
-		(function(arg){
-			//expect(arg).toBe("helo arg");
-
-			console.log(arg);
-
+		(function(input){
 			var privateMethodScopedToFunction = function(name){
 				return name + " worked";
 			};
@@ -22,7 +18,7 @@ describe("how modules work", function(arg) {
 				}
 			};
 
-			arg.Employee = Employee;
+			input.Employee = Employee;
 
 		})(input);
 

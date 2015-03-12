@@ -1,15 +1,11 @@
 "use strict";
 
-describe("how modules work", function (arg) {
+describe("how modules work", function () {
 	it("will organize code into a single unit", function () {
 		//old way IIFE.  Immediately invoked functional expression
+
 		var input = {};
-
-		(function (arg) {
-			//expect(arg).toBe("helo arg");
-
-			console.log(arg);
-
+		(function (input) {
 			var privateMethodScopedToFunction = function privateMethodScopedToFunction(name) {
 				return name + " worked";
 			};
@@ -24,7 +20,7 @@ describe("how modules work", function (arg) {
 				}
 			};
 
-			arg.Employee = Employee;
+			input.Employee = Employee;
 		})(input);
 
 		var e1 = new input.Employee("Brian");
