@@ -14,16 +14,17 @@ Notes for doing this presentation in brown bag.
 ##Setup Process
 
 - Recommend running: npm install -g karma-cli (global accessibility of Karma)
-- Run npm install at the root directory where you clone the project.
 
 ####Demo (powered by jasmine and Karma)
 
 - First time run Setup Process
 - cd ~/ES6/
 - npm install
-- babel src --watch --out-dir tests
+- babel src --watch --out-dir tests and babel external --watch --out-dir externalGenerated (node files)
 - karma start
 - Don't open the files in tests/ as this will messup babel file generation.
+- Files in ./externalGenerated are intended to be run by node directly.
+  - E.G. in the command line run "node ./external/import.js"
 
 #JavaScript 6 Concepts
 
@@ -293,7 +294,8 @@ yield* (for (item of items) if(predicate(item)) item);
 
 Originated with [CommonJS](http://www.commonjs.org/).  Then, Javascript broke away from the browser into stand alone apps like nodejs.  This made Asynchronous module loading more important.  AMD or Asynchrnous Module Definition arose in platforms like requireJS.  Script loading is also optimized at runtime to have fewer and smaller downloads.
 
-During development we want the modules to be split up into individual parts.  
+During development we want the modules to be split up into individual parts.  Due to the difficulty in setup, it is unlikely we will see native module loading in the browsers for years to come.  RequireJS will still be needed.
+
 
 ##Using ES6 Today
 

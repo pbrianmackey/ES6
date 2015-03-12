@@ -59,9 +59,9 @@ describe("how Functional Programming works", function () {
 
                 case 14:
                   context$4$0.prev = 14;
-                  context$4$0.t2 = context$4$0["catch"](3);
+                  context$4$0.t0 = context$4$0["catch"](3);
                   _didIteratorError = true;
-                  _iteratorError = context$4$0.t2;
+                  _iteratorError = context$4$0.t0;
 
                 case 18:
                   context$4$0.prev = 18;
@@ -139,9 +139,9 @@ describe("how Functional Programming works", function () {
 
           case 15:
             context$3$0.prev = 15;
-            context$3$0.t3 = context$3$0["catch"](3);
+            context$3$0.t1 = context$3$0["catch"](3);
             _didIteratorError = true;
-            _iteratorError = context$3$0.t3;
+            _iteratorError = context$3$0.t1;
 
           case 19:
             context$3$0.prev = 19;

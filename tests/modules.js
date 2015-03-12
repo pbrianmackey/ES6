@@ -28,3 +28,9 @@ describe("how modules work", function () {
 		expect(e1.name).toBe("Brian");
 	});
 });
+
+//run node in command line:  "node ./external/import.js"
+//Remainder of demo must be run in Node.js
+//because exports is part of the CommonJS module system.
+//A packaging tool like Webpack or Browserify could let it run here.
+//See https://babeljs.io/docs/using-babel/#browserify (search for Karma)
