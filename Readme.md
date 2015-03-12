@@ -20,7 +20,8 @@ Notes for doing this presentation in brown bag.
 - First time run Setup Process
 - cd ~/ES6/
 - npm install
-- babel src --watch --out-dir tests and babel external --watch --out-dir externalGenerated (node files)
+- babel src --watch --out-dir tests
+- babel external --watch --out-dir externalGenerated (node files)
 - karma start
 - Don't open the files in tests/ as this will messup babel file generation.
 - Files in ./externalGenerated are intended to be run by node directly.
