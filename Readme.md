@@ -20,6 +20,7 @@ Notes for doing this presentation in brown bag.
 
 - First time run Setup Process
 - cd ~/ES6/
+- npm install
 - babel src --watch --out-dir tests
 - karma start
 - Don't open the files in tests/ as this will messup babel file generation.
