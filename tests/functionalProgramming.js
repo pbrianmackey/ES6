@@ -59,9 +59,9 @@ describe("how Functional Programming works", function () {
 
                 case 14:
                   context$4$0.prev = 14;
-                  context$4$0.t0 = context$4$0["catch"](3);
+                  context$4$0.t8 = context$4$0["catch"](3);
                   _didIteratorError = true;
-                  _iteratorError = context$4$0.t0;
+                  _iteratorError = context$4$0.t8;
 
                 case 18:
                   context$4$0.prev = 18;
@@ -139,9 +139,9 @@ describe("how Functional Programming works", function () {
 
           case 15:
             context$3$0.prev = 15;
-            context$3$0.t1 = context$3$0["catch"](3);
+            context$3$0.t9 = context$3$0["catch"](3);
             _didIteratorError = true;
-            _iteratorError = context$3$0.t1;
+            _iteratorError = context$3$0.t9;
 
           case 19:
             context$3$0.prev = 19;
@@ -179,14 +179,15 @@ describe("how Functional Programming works", function () {
     company.addEmployees("Bob", "Sam", "Brian", "Jones");
 
     //Count the number of employees whose name starts with "B"
+    var predicate = function (e) {
+      return e[0] == "B";
+    };
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
     var _iteratorError = undefined;
 
     try {
-      for (var _iterator = filter(company.getEmployees(), function (e) {
-        return e[0] == "B";
-      })[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      for (var _iterator = filter(company.getEmployees(), predicate)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
         var num = _step.value;
 
         sum += 1;

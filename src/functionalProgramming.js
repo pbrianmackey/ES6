@@ -22,7 +22,7 @@ describe("how Functional Programming works", function() {
           if(predicate(item)){
             yield item;
           }
-        }
+        } 
     }
 
     let sum = 0;
@@ -30,7 +30,8 @@ describe("how Functional Programming works", function() {
     company.addEmployees("Bob", "Sam", "Brian", "Jones")
 
 		//Count the number of employees whose name starts with "B"
-    for(let num of filter(company.getEmployees(), e => e[0] == "B")){
+    let predicate = e => e[0] == "B";
+    for(let num of filter(company.getEmployees(), predicate)){
       sum += 1;
     }
 

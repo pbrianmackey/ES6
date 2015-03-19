@@ -25,7 +25,7 @@ Notes for doing this presentation in brown bag.
 - karma start
 - Don't open the files in tests/ as this will messup babel file generation.
 - Files in ./externalGenerated are intended to be run by node directly.
-  - E.G. in the command line run "node ./external/import.js"
+  - E.G. in the command line run "node ./externalGenerated/import.js"
 
 #JavaScript 6 Concepts
 
